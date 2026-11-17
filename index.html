@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Responsiva DOVER</title>
+    <title>Responsiva de equipo | DOVER</title>
 
     <style>
         * {
@@ -24,15 +24,48 @@
             max-width: 1000px;
             margin: 20px auto;
             background: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
             box-shadow: 0 3px 12px rgba(0,0,0,0.08);
         }
 
         h1 {
             text-align: center;
-            font-size: 22px;
-            margin: 5px 0 20px;
+            font-size: 24px;
+            margin: 5px 0 25px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .datos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .dato {
+            background: #f7f8fa;
+            padding: 14px;
+            border-radius: 7px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .etiqueta {
+            display: block;
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 6px;
+        }
+
+        .valor {
+            font-size: 15px;
+            font-weight: bold;
+            overflow-wrap: anywhere;
         }
 
         iframe {
@@ -45,9 +78,9 @@
 
         .aviso {
             text-align: center;
-            font-size: 13px;
+            font-size: 12px;
             color: #777;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         @media (max-width: 600px) {
@@ -57,11 +90,15 @@
 
             .contenedor {
                 margin: 5px auto;
-                padding: 10px;
+                padding: 15px;
+            }
+
+            .datos {
+                grid-template-columns: 1fr;
             }
 
             iframe {
-                height: 82vh;
+                height: 75vh;
             }
         }
     </style>
@@ -73,10 +110,53 @@
 
         <h1>Responsiva de equipo</h1>
 
-        <iframe
-            src="Responsiva_jessica.pdf"
-            title="Responsiva de equipo">
-        </iframe>
+        <section>
+            <h2>Información del equipo</h2>
+
+            <div class="datos">
+
+                <div class="dato">
+                    <span class="etiqueta">Equipo</span>
+                    <span class="valor">Laptop</span>
+                </div>
+
+                <div class="dato">
+                    <span class="etiqueta">Marca</span>
+                    <span class="valor">HP</span>
+                </div>
+
+                <div class="dato">
+                    <span class="etiqueta">Modelo</span>
+                    <span class="valor">15-FC0288LA</span>
+                </div>
+
+                <div class="dato">
+                    <span class="etiqueta">Número de serie</span>
+                    <span class="valor">5CD5414HBH</span>
+                </div>
+
+                <div class="dato">
+                    <span class="etiqueta">Custodio</span>
+                    <span class="valor">Jessica Sanchez Aguilar</span>
+                </div>
+
+                <div class="dato">
+                    <span class="etiqueta">Puesto</span>
+                    <span class="valor">Digital Analyst</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Documento de responsiva</h2>
+
+            <iframe
+                src="https://ljimenezg1500.github.io/responsivas/Responsiva_jessica.pdf"
+                title="Responsiva de equipo">
+            </iframe>
+
+        </section>
 
         <p class="aviso">
             Documento de consulta DOVER.
