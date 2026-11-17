@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsiva DOVER</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            color: #333;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            margin: 5px 0 20px;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 80vh;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+
+        .aviso {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 8px;
+            }
+
+            .contenedor {
+                margin: 5px auto;
+                padding: 10px;
+            }
+
+            iframe {
+                height: 82vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>Responsiva de equipo</h1>
+
+        <iframe
+            src="Responsiva_jessica(1).pdf"
+            title="Responsiva de equipo">
+        </iframe>
+
+        <p class="aviso">
+            Documento de consulta DOVER.
+        </p>
+
+    </main>
+
+</body>
+</html>
